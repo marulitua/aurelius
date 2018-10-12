@@ -2,14 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    {{#each remote_custom_css }}
-    <link href="{{{ this }}}" rel="stylesheet">
-    {{/each}}
-    {{#each local_custom_css }}
-    <style>{{{ this }}}</style>
-    {{/each}}
-    <link href="/_static/vendor/highlight.js/styles/{{ highlight_theme }}.css" rel="stylesheet">
-    <link href="/_static/css/styles.css" rel="stylesheet">
     <title>Swagger Composer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/docs/swagger-ui.css" >
@@ -72,9 +64,7 @@
 
     <div id="swagger-ui"></div>
 
-    <script src="/docs/lib/swagger-ui-bundle.js"> </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.19.3/swagger-ui-bundle.js"> </script>
-    <script src="/lib/swagger-ui-standalone-preset.js"> </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.19.3/swagger-ui-standalone-preset.js"> </script>
 
     <script src="/_static/vendor/reconnecting-websocket/reconnecting-websocket.min.js"></script>
