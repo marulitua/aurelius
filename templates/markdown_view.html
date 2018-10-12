@@ -78,7 +78,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.19.3/swagger-ui-standalone-preset.js"> </script>
 
     <script src="/_static/vendor/reconnecting-websocket/reconnecting-websocket.min.js"></script>
-    <script src="/_static/js/markdown_client.js"></script>
+    <!-- <script src="/_static/js/markdown_client.js"></script> -->
 
     <script>
     window.onload = function() {
@@ -86,7 +86,8 @@
       const ui = SwaggerUIBundle({
         //url: "${window.location}/swagger.json",
         url: function() {
-          return `${window.location}/swagger.json`;
+          return 'https://petstore.swagger.io/v2/swagger.json';
+          //return `${window.location}/swagger.json`;
         }(),
         dom_id: '#swagger-ui',
         validatorUrl: false,
